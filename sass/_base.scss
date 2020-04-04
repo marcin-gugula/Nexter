@@ -9,9 +9,14 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%; // default 1rem = 10px
+
+    @media only screen and (max-width:$bp-largest){
+        font-size: 50%;
+    }
 }
 
 body{
+    height: 100vh;
     font-family: $font-primary;
     color: $color-grey-dark-2;
     font-weight: 300;
